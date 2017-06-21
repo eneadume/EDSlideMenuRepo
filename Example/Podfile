@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EDSlideMenu_Example' do
+  pod 'EDSlideMenu', :path => '../'
+
+  target 'EDSlideMenu_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
