@@ -1,0 +1,16 @@
+PODS:
+  - EDSlideMenu (0.1.0)
+
+DEPENDENCIES:
+  - EDSlideMenu (from `../`)
+
+EXTERNAL SOURCES:
+  EDSlideMenu:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EDSlideMenu: ac5ea4395bd7996f427f8a171ebdd22a54731cb5
+
+PODFILE CHECKSUM: 23d36a1f16f08374cbdf497d876bafceb675f98a
+
+COCOAPODS: 1.2.1

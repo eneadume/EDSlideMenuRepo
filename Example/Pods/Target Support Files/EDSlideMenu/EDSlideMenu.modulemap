@@ -1,0 +1,6 @@
+framework module EDSlideMenu {
+  umbrella header "EDSlideMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
