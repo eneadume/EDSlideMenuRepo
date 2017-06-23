@@ -12,7 +12,8 @@
 		15CC4AB4A755F7069539BC054A3B09A5 /* Pods-EDSlideMenu_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B20578A76BDD7EB455E730518221DEF0 /* Pods-EDSlideMenu_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D993004D11D3EABAE9BFA23022F97BF /* EDSlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E9BAE67D7FDE2098F8853E2D80E33C /* EDSlideMenu-dummy.m */; };
 		86C7C2731290DDB0F8C0701501E3B7D3 /* EDSlideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BDF6DFAA54D3D1A418F073E79C3D58F /* EDSlideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EE0E67F1EFAB2BF00FAD766 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0E67E1EFAB2BF00FAD766 /* CustomSlider.swift */; };
+		8EE0E7731EFD6C4700FAD766 /* DrawerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0E7721EFD6C4700FAD766 /* DrawerMenu.swift */; };
+		8EE0E7751EFD6C8B00FAD766 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0E7741EFD6C8B00FAD766 /* extension.swift */; };
 		AB438AAA5F5BBF0EC94DAD0C51D66CE9 /* Pods-EDSlideMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 587A801E3ACC6304DECAE173E234AB0E /* Pods-EDSlideMenu_Tests-dummy.m */; };
 		D9E18C67A4463D07E1BBA7C259BA643B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		FCFB57A0179AE6C34867935A8D40F8BD /* Pods-EDSlideMenu_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC947CAA87F681C845F2C207413B1892 /* Pods-EDSlideMenu_Example-dummy.m */; };
@@ -52,8 +53,9 @@
 		8BDF6DFAA54D3D1A418F073E79C3D58F /* EDSlideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDSlideMenu-umbrella.h"; sourceTree = "<group>"; };
 		8DC43B62218516E7840C020F84624517 /* Pods-EDSlideMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EDSlideMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8E2EDAEE3422144DE12E3699CFC6C0C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EE0E67D1EFAB2AB00FAD766 /* CustomSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSlider.xib; sourceTree = "<group>"; };
-		8EE0E67E1EFAB2BF00FAD766 /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		8EE0E7711EFD6C2E00FAD766 /* DrawerMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawerMenu.xib; sourceTree = "<group>"; };
+		8EE0E7721EFD6C4700FAD766 /* DrawerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMenu.swift; sourceTree = "<group>"; };
+		8EE0E7741EFD6C8B00FAD766 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		965BF28B142EE7264D89CD8F3E7A6F62 /* Pods-EDSlideMenu_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EDSlideMenu_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		AB2F3070F834D1E0EB0876095F2C743B /* Pods_EDSlideMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDSlideMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,8 +220,9 @@
 		F014358037D9B1B6073D4C3266548FDD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8EE0E67D1EFAB2AB00FAD766 /* CustomSlider.xib */,
-				8EE0E67E1EFAB2BF00FAD766 /* CustomSlider.swift */,
+				8EE0E7711EFD6C2E00FAD766 /* DrawerMenu.xib */,
+				8EE0E7721EFD6C4700FAD766 /* DrawerMenu.swift */,
+				8EE0E7741EFD6C8B00FAD766 /* extension.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -344,8 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE0E7751EFD6C8B00FAD766 /* extension.swift in Sources */,
 				5D993004D11D3EABAE9BFA23022F97BF /* EDSlideMenu-dummy.m in Sources */,
-				8EE0E67F1EFAB2BF00FAD766 /* CustomSlider.swift in Sources */,
+				8EE0E7731EFD6C4700FAD766 /* DrawerMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

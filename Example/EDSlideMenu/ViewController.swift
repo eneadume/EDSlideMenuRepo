@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import EDSlideMenu
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
