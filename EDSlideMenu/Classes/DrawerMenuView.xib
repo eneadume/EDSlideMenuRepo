@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DrawerMenuView" customModule="EDDrawerMenu">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpG-8U-Rla">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INt-6c-iJC">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRZ-3M-bb3">
+                            <rect key="frame" x="-266" y="0.0" width="266" height="667"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="266" id="yXX-2O-8kn"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-4G-GU0">
+                            <rect key="frame" x="375" y="0.0" width="266" height="667"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="266" id="flm-HE-0Vb"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCD-Nu-nbl">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="closeFromDimmButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="IOR-Td-hTU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="n7f-4G-GU0" firstAttribute="top" secondItem="kpG-8U-Rla" secondAttribute="top" id="2zL-Ha-4o8"/>
+                        <constraint firstItem="pRZ-3M-bb3" firstAttribute="trailing" secondItem="kpG-8U-Rla" secondAttribute="leading" id="7xz-nK-iRt"/>
+                        <constraint firstAttribute="bottom" secondItem="INt-6c-iJC" secondAttribute="bottom" id="CPB-vR-bTY"/>
+                        <constraint firstAttribute="bottom" secondItem="n7f-4G-GU0" secondAttribute="bottom" id="FSs-Qn-4e9"/>
+                        <constraint firstItem="INt-6c-iJC" firstAttribute="leading" secondItem="kpG-8U-Rla" secondAttribute="leading" id="MA6-yU-LVJ"/>
+                        <constraint firstItem="INt-6c-iJC" firstAttribute="top" secondItem="kpG-8U-Rla" secondAttribute="top" id="NCa-OZ-Dr1"/>
+                        <constraint firstAttribute="bottom" secondItem="iCD-Nu-nbl" secondAttribute="bottom" id="SZe-Z8-JlY"/>
+                        <constraint firstItem="n7f-4G-GU0" firstAttribute="leading" secondItem="iCD-Nu-nbl" secondAttribute="trailing" id="TZ3-0J-NzR"/>
+                        <constraint firstItem="iCD-Nu-nbl" firstAttribute="top" secondItem="kpG-8U-Rla" secondAttribute="top" id="ZYJ-IE-ZXJ"/>
+                        <constraint firstAttribute="trailing" secondItem="n7f-4G-GU0" secondAttribute="trailing" constant="-266" id="e0K-fv-dUW"/>
+                        <constraint firstAttribute="bottom" secondItem="pRZ-3M-bb3" secondAttribute="bottom" id="fed-J1-ads"/>
+                        <constraint firstItem="pRZ-3M-bb3" firstAttribute="top" secondItem="kpG-8U-Rla" secondAttribute="top" id="l0B-td-2u3"/>
+                        <constraint firstItem="iCD-Nu-nbl" firstAttribute="leading" secondItem="pRZ-3M-bb3" secondAttribute="trailing" id="nsS-OF-Z0K"/>
+                        <constraint firstAttribute="trailing" secondItem="INt-6c-iJC" secondAttribute="trailing" id="poj-WQ-owC"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="k7d-2q-wRA" appends="YES" id="Uk9-Dl-7IX"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="kpG-8U-Rla" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5AW-EY-zHN"/>
+                <constraint firstItem="kpG-8U-Rla" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NlG-yQ-Ls9"/>
+                <constraint firstAttribute="bottom" secondItem="kpG-8U-Rla" secondAttribute="bottom" id="Tug-uA-fIY"/>
+                <constraint firstAttribute="trailing" secondItem="kpG-8U-Rla" secondAttribute="trailing" id="eO8-vX-JZz"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="INt-6c-iJC" id="4os-bX-9aO"/>
+                <outlet property="dimmButton" destination="iCD-Nu-nbl" id="2T8-7u-lQO"/>
+                <outlet property="leftSlideView" destination="n7f-4G-GU0" id="D5H-zV-koO"/>
+                <outlet property="slideLeftTrailingConstraint" destination="e0K-fv-dUW" id="pDz-51-Ngy"/>
+                <outlet property="slideRightTrailingConstraint" destination="7xz-nK-iRt" id="nK8-ec-H49"/>
+                <outlet property="slideRightView" destination="pRZ-3M-bb3" id="DvO-bm-fKU"/>
+                <outlet property="view" destination="kpG-8U-Rla" id="cha-zj-NBJ"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="k7d-2q-wRA">
+            <connections>
+                <action selector="didPanTray:" destination="iN0-l3-epB" id="Xuz-rW-Mio"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+</document>
