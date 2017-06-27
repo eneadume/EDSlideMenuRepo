@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DrawerMenu: UIView {
+public class DrawerMenu: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet var slideRightView: UIView!
     @IBOutlet var slideRightTrailingConstraint: NSLayoutConstraint!
@@ -19,7 +19,7 @@ class DrawerMenu: UIView {
     var slideViewWidth : CGFloat!
     
     
-    @IBAction func closeFromDimmButton(sender: AnyObject) {
+public    @IBAction func closeFromDimmButton(sender: AnyObject) {
         UIView.animate(withDuration: 0.4, animations: {
             self.slideRightTrailingConstraint.constant = 0;
             self.slideLeftTrailingConstraint.constant = -266;
