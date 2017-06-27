@@ -19,7 +19,7 @@ public class DrawerMenu: UIView {
     var slideViewWidth : CGFloat!
     
     
-public    @IBAction func closeFromDimmButton(sender: AnyObject) {
+    @IBAction public func closeFromDimmButton(sender: AnyObject) {
         UIView.animate(withDuration: 0.4, animations: {
             self.slideRightTrailingConstraint.constant = 0;
             self.slideLeftTrailingConstraint.constant = -266;
@@ -30,11 +30,11 @@ public    @IBAction func closeFromDimmButton(sender: AnyObject) {
     
     
     @IBAction func didPanTray(sender: UIPanGestureRecognizer) {  switch (sender.state) {
-    case  .ended :
+    case  .began :
         
         slideViewWidth = slideRightView.frame.size.width;
         break;
-    case .changed :
+    case  .changed :
         let velocity = sender.velocity(in: view)
         let translation = sender.translation(in: view)
         
@@ -62,10 +62,8 @@ public    @IBAction func closeFromDimmButton(sender: AnyObject) {
                     sender.setTranslation(CGPoint.zero, in: view)
             }
         }
-        
-        
-        
-    case .ended:
+
+     case  .ended:
         if ( slideRightTrailingConstraint.constant <= slideViewWidth/2){
             UIView.animate(withDuration: 0.4, animations: {
                 self.slideRightTrailingConstraint.constant = 0
