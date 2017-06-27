@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomDrawerMenu" customModule="EDSlideMenu">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzt-qf-duV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98I-bT-ee2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qci-TK-5TL">
+                            <rect key="frame" x="-266" y="0.0" width="266" height="667"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="266" id="eac-2J-1nv"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gf-xU-S1a">
+                            <rect key="frame" x="375" y="0.0" width="266" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="266" id="r2C-ST-lVu"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-5K-Bi0">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="closeWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="T6L-xS-Ebb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="cIx-5K-Bi0" firstAttribute="top" secondItem="Zzt-qf-duV" secondAttribute="top" id="127-w5-eZN"/>
+                        <constraint firstItem="qci-TK-5TL" firstAttribute="trailing" secondItem="Zzt-qf-duV" secondAttribute="leading" id="5gi-Qo-TvK"/>
+                        <constraint firstItem="cIx-5K-Bi0" firstAttribute="leading" secondItem="Zzt-qf-duV" secondAttribute="leading" id="8MA-mn-L6x"/>
+                        <constraint firstItem="5gf-xU-S1a" firstAttribute="top" secondItem="Zzt-qf-duV" secondAttribute="top" id="CTe-RD-1TM"/>
+                        <constraint firstItem="98I-bT-ee2" firstAttribute="leading" secondItem="Zzt-qf-duV" secondAttribute="leading" id="E5L-aH-jZG"/>
+                        <constraint firstItem="cIx-5K-Bi0" firstAttribute="top" secondItem="Zzt-qf-duV" secondAttribute="top" id="Ei0-LR-6Ys"/>
+                        <constraint firstItem="qci-TK-5TL" firstAttribute="top" secondItem="Zzt-qf-duV" secondAttribute="top" id="HXo-tf-aIo"/>
+                        <constraint firstAttribute="bottom" secondItem="qci-TK-5TL" secondAttribute="bottom" id="RLu-eu-gjE"/>
+                        <constraint firstAttribute="trailing" secondItem="5gf-xU-S1a" secondAttribute="trailing" constant="-266" id="S9a-uD-Zfk"/>
+                        <constraint firstItem="98I-bT-ee2" firstAttribute="top" secondItem="Zzt-qf-duV" secondAttribute="top" id="Ut3-eT-aNt"/>
+                        <constraint firstAttribute="trailing" secondItem="cIx-5K-Bi0" secondAttribute="trailing" id="VAd-es-zSS"/>
+                        <constraint firstAttribute="bottom" secondItem="cIx-5K-Bi0" secondAttribute="bottom" id="XFg-iT-HCT"/>
+                        <constraint firstAttribute="bottom" secondItem="98I-bT-ee2" secondAttribute="bottom" id="Zf9-sH-bZC"/>
+                        <constraint firstItem="cIx-5K-Bi0" firstAttribute="leading" secondItem="Zzt-qf-duV" secondAttribute="leading" id="bdh-dZ-q5d"/>
+                        <constraint firstAttribute="bottom" secondItem="5gf-xU-S1a" secondAttribute="bottom" id="d4M-Mv-ET2"/>
+                        <constraint firstAttribute="trailing" secondItem="cIx-5K-Bi0" secondAttribute="trailing" id="e1L-62-BvG"/>
+                        <constraint firstAttribute="trailing" secondItem="98I-bT-ee2" secondAttribute="trailing" id="fiR-lw-aLF"/>
+                        <constraint firstAttribute="bottom" secondItem="cIx-5K-Bi0" secondAttribute="bottom" id="qUp-Jt-pGJ"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="gVd-Bk-ijw" appends="YES" id="B15-Gm-gYv"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zzt-qf-duV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2sl-6W-bab"/>
+                <constraint firstItem="Zzt-qf-duV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8yD-qC-bpI"/>
+                <constraint firstAttribute="bottom" secondItem="Zzt-qf-duV" secondAttribute="bottom" id="jTw-e5-k8K"/>
+                <constraint firstAttribute="trailing" secondItem="Zzt-qf-duV" secondAttribute="trailing" id="tGl-tN-QeV"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="98I-bT-ee2" id="oVt-yG-Hcw"/>
+                <outlet property="dimmButton" destination="cIx-5K-Bi0" id="6lS-f1-PJK"/>
+                <outlet property="leftSlideView" destination="5gf-xU-S1a" id="CRt-6B-geK"/>
+                <outlet property="slideLeftTrailingConstraint" destination="S9a-uD-Zfk" id="BQY-Qh-tUo"/>
+                <outlet property="slideRightTrailingConstraint" destination="5gi-Qo-TvK" id="q66-oC-t3V"/>
+                <outlet property="slideRightView" destination="qci-TK-5TL" id="byW-oD-yGR"/>
+                <outlet property="view" destination="Zzt-qf-duV" id="PB1-uf-FyT"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="gVd-Bk-ijw">
+            <connections>
+                <action selector="closeFromPanWithSender:" destination="iN0-l3-epB" id="N7H-5b-Gtq"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+</document>

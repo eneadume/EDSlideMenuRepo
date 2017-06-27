@@ -22,7 +22,7 @@ pod "EDSlideMenu"
 
 ## Author
 
-eneadume@gmail.com, eneadume@gmail.com
+Enea Dume, eneadume@gmail.com
 
 ## License
 

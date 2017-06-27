@@ -9,9 +9,12 @@
 import UIKit
 import EDSlideMenu
 class ViewController: UIViewController {
+    @IBOutlet var baseView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let frameworkBundle = Bundle(identifier: "org.cocoapods.EDSlideMenu")
+        var _ :CustomDrawerMenu = UIView.createView(attachTo : self.baseView, fromBundle : frameworkBundle)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
