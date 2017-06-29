@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EDSlideMenu'
-  s.version          = '0.1.9'
+  s.version          = '1.0.0'
 s.summary          = 'Swipe Left Or Right, just like drawermenu in android..'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ s.summary          = 'Swipe Left Or Right, just like drawermenu in android..'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'EneaDume' => 'eneadume@gmail.com' }
   s.source           = { :git => 'https://github.com/eneadume/EDSlideMenuRepo.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.linkedin.com/in/enea-dume-257b33b2/'
 
   s.ios.deployment_target = '8.0'
 
