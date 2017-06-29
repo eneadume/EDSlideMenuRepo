@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/EDSlideMenu.svg?style=flat)](http://cocoapods.org/pods/EDSlideMenu)
 [![Platform](https://img.shields.io/cocoapods/p/EDSlideMenu.svg?style=flat)](http://cocoapods.org/pods/EDSlideMenu)
 
+[Change Log] (CHANGELOG.md)
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
