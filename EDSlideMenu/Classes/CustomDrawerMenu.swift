@@ -10,13 +10,13 @@ import UIKit
 import Foundation
 public class CustomDrawerMenu: UIView {
 
-    @IBOutlet var contentView: UIView!
+    @IBOutlet public var contentView: UIView!
     @IBOutlet var view: UIView!
-    @IBOutlet var slideRightView: UIView!
-    @IBOutlet var leftSlideView: UIView!
-    @IBOutlet var slideRightTrailingConstraint: NSLayoutConstraint!
-    @IBOutlet var slideLeftTrailingConstraint: NSLayoutConstraint!
-    @IBOutlet var dimmButton: UIButton!
+    @IBOutlet public var slideRightView: UIView!
+    @IBOutlet public var leftSlideView: UIView!
+    @IBOutlet public var slideRightTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet public var slideLeftTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet public var dimmButton: UIButton!
       var slideViewWidth : CGFloat!
 
 

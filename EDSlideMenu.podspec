@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EDSlideMenu'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
 s.summary          = 'Swipe Left Or Right, just like drawermenu in android..'
 
 # This description is used to generate tags and improve search results.
