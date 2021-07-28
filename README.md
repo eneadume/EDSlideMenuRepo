@@ -11,14 +11,12 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 To use this pod in your project follow the example: 
 
-  override func viewDidLoad() {
+      override func viewDidLoad() {
         super.viewDidLoad()
-
         let frameworkBundle = Bundle(identifier: "org.cocoapods.EDSlideMenu")//This is the bundle of my framework
-
         //baseView is the view that you want to load the SlideMenu. it is the view that you create in your storyboard
         var myMenu :CustomDrawerMenu = UIView.createView(attachTo : self.baseView, fromBundle : frameworkBundle)
-    }
+      }
 
 
 ## Requirements
